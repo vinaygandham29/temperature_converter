@@ -1,14 +1,14 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,700;1,100;1,300;1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Play&display=swap');
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     outline: none;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Play', sans-serif;
     letter-spacing: 1px;
 }
 body{
-    background-color: #e2e2e2;
+    background-color: #000000;
 }
 .tool-container{ 
     display: flex;
@@ -35,9 +35,10 @@ body{
     width: 50%;
     padding: 10px;
     margin: 5px;
-    background: rgb(154, 197, 163);
-    border-radius: 10px;
-    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+    background: rgb(0,255,176);
+    background: linear-gradient(148deg, rgba(0,255,176,1) 0%, rgba(28,224,173,1) 32%, rgba(2,0,36,1) 100%);
+    border-radius: 5px;
+    box-shadow: rgba(255, 255, 255, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
 }
 .tool-input-group{
     display: flex;
@@ -64,7 +65,7 @@ body{
     width: 150px;
     height: 35px;
     border: None;
-    border-radius: 5px;
+    border-radius: 2px;
     padding: 5px;
 }
 .tool-btn{
@@ -73,9 +74,9 @@ body{
     min-width: 100px;
     margin: 5px;
     padding: 10px 15px;
-    border-radius: 5px;
+    border-radius: 30px;
     font-size: 20px;
-    color: aliceblue;    
+    color: rgb(0,255,176);    
     box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
 }
 .tool-btn:hover{
@@ -84,17 +85,17 @@ body{
 .tool-btn-reset{
     width: 150px;
     margin-left: 0px;
-    background: rgb(199, 214, 63);
-    color: rgb(58, 25, 25);
+    background: rgb(0, 0, 0);
+    color: rgb(0,255,176);
 }
 .tool-select-group{
     float: right;
     border: none;
     height: 35px;
-    min-width: 100px;
+    min-width: 120px;
     text-align: center;
     border-right:5px ;
-    border-radius: 5px;
+    border-radius: 2px;
     font-weight: 700;
     box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
 
@@ -102,7 +103,7 @@ body{
 .tool-btn-calculate{
     width: 150px;
     margin-right: 0px;
-    background: rgb(33, 83, 219);
+    background: rgb(1, 1, 1);
 }
 .tool-output-box{
     display: none;
@@ -161,7 +162,7 @@ body{
     color: rgb(84, 134, 95);
 }
 .tool-error-border{
-    border: 2px solid red;
+    border: 2px solid rgb(255, 255, 255);
 }
 .tool-error-message{
     display: block;
@@ -177,6 +178,16 @@ body{
 .tool-readonly-background{
     background: #E5E5E5;
 }
+
+.footer{
+flex: 1;
+text-align: center;
+padding: 20px;
+position: fixed;
+width: 100%;
+bottom: 0;
+}
+
 @media only screen and (max-width: 700px) {
     .tool-container{
         width: 98%;
